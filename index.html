@@ -39,8 +39,9 @@ a:focus-visible{outline:2px solid #222;outline-offset:3px;border-radius:3px}
 .side h1{font:600 clamp(30px,3.4vw,36px)/1.1 "EB Garamond",Georgia,serif;margin:0 0 12px}
 .side .role{color:var(--soft);margin:0 0 6px;font-size:17px;line-height:1.6}
 .side .aff{display:inline-block;margin-bottom:20px;font-size:17px}
-.pills{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:250px;margin:0 auto;list-style:none;padding:0;margin:0}
+.pills{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:330px;margin:0 auto;list-style:none;padding:0;margin:0}
 .pills a{display:inline-flex;align-items:center;min-height:36px;padding:0 16px;border:1.5px solid #cfcfcf;border-radius:24px;color:var(--ink);text-decoration:none;font-size:15px;background:var(--paper)}
+.emtxt{margin:14px 0 0;font-size:14px;color:var(--soft)}
 .pills a:hover{border-color:var(--red);color:var(--red)}
 h2{font:600 clamp(28px,3vw,34px)/1.15 "EB Garamond",Georgia,serif;margin:0 0 22px;padding-bottom:12px;
  background:linear-gradient(var(--red),var(--red)) left bottom/90px 4px no-repeat,linear-gradient(var(--rule),var(--rule)) left bottom/100% 4px no-repeat}
@@ -88,12 +89,15 @@ footer{text-align:center;color:var(--soft);font-size:15px;padding:24px 16px 40px
   <p class="role">PhD candidate in Sociology, ICS / SCOOP</p>
   <a class="aff" href="https://www.rug.nl/staff/mazlum.ozkan/">University of Groningen</a>
   <ul class="pills">
-    <li><a href="mailto:mazlum.ozkan@rug.nl">Email</a></li>
+    <li><a href="mailto:mazlum.ozkan@rug.nl" id="em" title="mazlum.ozkan@rug.nl">Email</a></li>
     <li><a href="https://orcid.org/0009-0004-7931-2222">ORCID</a></li>
     <li><a href="https://nl.linkedin.com/in/mazlumozkan">LinkedIn</a></li>
+    <li><a href="https://x.com/OzkanMazlum11">X</a></li>
     <li><a href="cv.pdf">CV (PDF)</a></li>
   </ul>
+  <p class="emtxt">mazlum.ozkan@rug.nl</p>
 </aside>
+<script>{const a=document.getElementById('em');if(a)a.addEventListener('click',()=>{try{navigator.clipboard.writeText('mazlum.ozkan@rug.nl').then(()=>{a.textContent='Copied ✓';setTimeout(()=>a.textContent='Email',2000)}).catch(()=>{})}catch(_){}})}</script>
 <div>
   <section>
     <h2>About</h2>
