@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research · Mazlum Özkan</title>
+<meta name="description" content="Mazlum Özkan is a PhD candidate in Sociology at the University of Groningen, researching protest, social movements and repression.">
+<meta name="theme-color" content="#e8d5a5">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+/* VOICE: quiet, scholarly, clear — an academic homepage in the manner of a printed CV
+   IDEA: a sand-coloured letterhead over cream paper, with a red editorial mark under each heading
+   PICTURE: the round portrait with a blue and sand double ring, name and link pills beneath
+   COLOUR and TYPE: sand #e8d5a5, cream paper, slate-blue rule, brick-red accent, violet tabs; EB Garamond + Source Serif 4
+   LAYOUT: sticky profile column left, sections right; one column below 860px */
+:root{color-scheme:light dark;
+ --paper:light-dark(#faf6eb,#17150f);--sand:light-dark(#e8d5a5,#2b2518);--ink:light-dark(#2a2622,#ece6da);
+ --soft:light-dark(#5e574e,#b5ac9c);--rule:light-dark(#e8d5a5,#3a3222);--blue:light-dark(#8095c0,#8ea2cc);
+ --red:light-dark(#b8382c,#e77b6e);--violet:light-dark(#9c7bb3,#b597c9);--card:light-dark(#ffffff,#211e16)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:80px}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.75 "Source Serif 4",Georgia,serif;overflow-x:clip}
+a{color:var(--red);text-underline-offset:3px;text-decoration-thickness:1px}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:3px}
+.top{position:sticky;top:0;z-index:5;background:var(--sand);border-bottom:4px solid var(--blue)}
+.top .in{max-width:1180px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;gap:4px 28px;padding:10px max(4vw,16px)}
+.brand{font:600 26px/1.2 "EB Garamond",Georgia,serif;color:var(--ink);text-decoration:none;margin-right:auto}
+.top nav{display:flex;flex-wrap:wrap;gap:4px 26px}
+.top nav a{font:500 20px/1 "EB Garamond",Georgia,serif;color:var(--ink);text-decoration:none;padding:12px 0 8px;border-bottom:3px solid transparent}
+.top nav a:hover{color:var(--red)}
+.top nav a[aria-current]{color:var(--red);border-color:var(--red)}
+.wrap{max-width:1180px;margin:auto;padding:clamp(28px,4vw,56px) max(4vw,16px);display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:clamp(28px,5vw,72px)}
+.wrap.single{grid-template-columns:minmax(0,1fr);max-width:900px}
+.side{text-align:center;align-self:start;position:sticky;top:96px}
+.photo{width:min(230px,70%);aspect-ratio:1;margin:0 auto 26px;border-radius:50%;padding:7px;background:var(--sand);border:5px solid var(--blue);position:relative}
+.photo div{width:100%;height:100%;border-radius:50%;overflow:hidden;background:linear-gradient(160deg,#c9b98f,#8a7a57);display:grid;place-items:center;position:relative}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.photo span{font:600 64px/1 "EB Garamond",Georgia,serif;color:#fffaf0}
+.side h1{font:600 clamp(34px,4vw,42px)/1.1 "EB Garamond",Georgia,serif;margin:0 0 12px}
+.side .role{color:var(--soft);margin:0 0 6px;font-size:17px;line-height:1.6}
+.side .aff{display:inline-block;margin-bottom:22px;font-size:19px}
+.pills{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;list-style:none;padding:0;margin:0}
+.pills a{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border:1.5px solid var(--blue);border-radius:24px;color:var(--ink);text-decoration:none;font-size:16px;background:var(--paper)}
+.pills a:hover{background:var(--sand)}
+h2{font:600 clamp(28px,3vw,34px)/1.15 "EB Garamond",Georgia,serif;margin:0 0 22px;padding-bottom:12px;
+ background:linear-gradient(var(--red),var(--red)) left bottom/90px 4px no-repeat,linear-gradient(var(--rule),var(--rule)) left bottom/100% 4px no-repeat}
+h3{font:600 20px/1.3 "EB Garamond",Georgia,serif;margin:0}
+section{margin-bottom:clamp(36px,5vw,56px)}
+p{margin:0 0 16px;max-width:72ch}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,4vw,56px)}
+.chips{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:12px}
+.chips li{background:var(--card);border-left:5px solid var(--violet);padding:6px 18px 6px 22px;font-size:16px}
+.edu{list-style:none;padding:0;margin:0;display:grid;gap:22px}
+.edu .inst{font-size:18px}.edu .yrs,.edu .note{color:var(--soft);font-size:15px}
+.edu .note{display:block}
+.pubs{list-style:none;padding:0;margin:0;display:grid;gap:22px}
+.pubs .t{font-weight:600;line-height:1.45}
+.pubs .v{color:var(--soft);font-size:16px}
+.pubs .v i{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;min-height:32px;margin-top:6px;padding:0 14px;border:1.5px solid var(--blue);border-radius:16px;color:var(--ink);text-decoration:none;font-size:14px}
+.btn:hover{background:var(--sand)}
+.tag{display:inline-block;font-size:13px;background:var(--sand);color:var(--ink);padding:1px 10px;border-radius:10px;margin-left:6px;vertical-align:2px}
+.more{font-size:17px}
+.sub{margin:34px 0 18px;font:600 22px/1.2 "EB Garamond",Georgia,serif;color:var(--soft)}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}
+.proj div{background:var(--card);border-left:5px solid var(--violet);padding:16px 20px}
+.proj p{font-size:16px;color:var(--soft);margin:6px 0 0}
+blockquote{margin:24px 0;padding:2px 0 2px 20px;border-left:4px solid var(--red);font:italic 21px/1.5 "EB Garamond",Georgia,serif;max-width:60ch}
+blockquote cite{display:block;font:normal 15px "Source Serif 4",serif;color:var(--soft);margin-top:6px}
+.lang{border-collapse:collapse;font-size:16px;min-width:min(100%,360px)}
+.lang td{padding:8px 0;border-bottom:1px solid var(--rule)}.lang td:last-child{text-align:right;color:var(--soft);padding-left:40px}
+footer{text-align:center;color:var(--soft);font-size:15px;padding:24px 16px 40px;border-top:4px solid var(--rule);max-width:1180px;margin:auto}
+@media(max-width:860px){.wrap{grid-template-columns:minmax(0,1fr)}.side{position:static}.two{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){.top nav{gap:2px 18px}.top nav a{font-size:18px}.brand{font-size:23px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="in"><a class="brand" href="index.html">Mazlum Özkan</a><nav aria-label="Main"><a href="index.html">Home</a><a href="research.html" aria-current=page>Research</a><a href="misc.html">Misc.</a><a href="cv.pdf">CV</a></nav></div></header>
+<main class="wrap single">
+
+<div>
+  <section>
+    <h2>Research</h2>
+    <p>My research asks how social movements respond to repression, and how political and structural conditions shape when and how people act together. My cases come mainly from Iran, and I combine social theory with computational text and visual analysis.</p>
+    <div class="proj">
+      <div><h3>Emotions and protest imagery</h3><p>The emotional dynamics of protest imagery during Iran's Woman, Life, Freedom movement.</p></div>
+      <div><h3>Repression and collective action</h3><p>Dissertation research on how Iranian social movements respond to repression and state violence.</p></div>
+      <div><h3>Leadership discourse in the Green Movement</h3><p>How leadership discourse produced intra-hegemonic polarisation in Iran's Green Movement.</p></div>
+      <div><h3>Student protest in Europe</h3><p>How European universities responded to pro-Palestinian student protests, through Marcuse's concept of repressive tolerance.</p></div>
+    </div>
+  </section>
+  <section>
+    <h2>Publications</h2>
+    <div class="sub">Journal articles</div>
+    <ul class="pubs"><li><div class="t">Reform without Revolution: Leadership Discourse and Intra-Hegemonic Polarization in Iran&#x27;s Green Movement</div><div class="v"><b>Özkan, M.</b> · <i>Third World Quarterly</i><span class="tag">Forthcoming</span></div></li><li><div class="t">Repressive Tolerance in Practice: European Universities and the Suppression of Pro-Palestinian Student Protests</div><div class="v"><b>Özkan, M.</b> · <i>Insight Turkey</i><span class="tag">Forthcoming</span></div></li></ul>
+    <div class="sub">Book reviews</div>
+    <ul class="pubs"><li><div class="t">The Open Society as an Enemy – Review</div><div class="v"><i>LSE Review of Books</i>, 2025</div><a class="btn" href="https://pure.rug.nl/ws/portalfiles/portal/1189549963/blogs.lse.ac.uk-The_Open_Society_as_an_Enemy_Review.pdf">PDF</a></li><li><div class="t">Social Movements and the Struggles for Rights, Justice and Democracy in Paraguay – Review</div><div class="v"><i>Insight Turkey, 26(4), 349–351</i>, 2024</div><a class="btn" href="https://pure.rug.nl/ws/portalfiles/portal/1189556619/Social_Movements_and_the_Struggles_for_Rights_Justice_and_Democracy_in_Paraguay.pdf">PDF</a></li><li><div class="t">What Really Went Wrong – Review</div><div class="v"><i>LSE Review of Books</i>, 2024</div><a class="btn" href="https://pure.rug.nl/ws/portalfiles/portal/1309854793/blogs.lse.ac.uk-What_Really_Went_Wrong_review.pdf">PDF</a></li></ul>
+    <div class="sub">Commentary and analysis</div>
+    <ul class="pubs"><li><div class="t">Iran protests are not about politics anymore, they are about an economy that doesn&#x27;t work</div><div class="v"><i>TRT World</i>, 2026</div><a class="btn" href="https://trtworld.com/article/2c5b215798b3">Read</a></li><li><div class="t">Israel&#x27;s Doha strike kills diplomacy – and US credibility with it</div><div class="v"><i>Middle East Monitor</i>, 2025</div><a class="btn" href="https://pure.rug.nl/ws/portalfiles/portal/1402666602/Israel_s_Doha_strike_kills_diplomacy_and_US_credibility_with_it.pdf">PDF</a></li><li><div class="t">Iran is the biggest loser in Trump&#x27;s Azerbaijan-Armenia peace deal</div><div class="v"><i>The Hill</i>, 2025</div><a class="btn" href="https://thehill.com/opinion/international/5485138-iran-is-the-loser-in-trumps-azerbaijan-armenia-peace-deal/">Read</a></li><li><div class="t">Between Iran and a hard place, Afghans are forever the scapegoat</div><div class="v"><i>The New Arab</i>, 2025</div><a class="btn" href="https://pure.rug.nl/ws/portalfiles/portal/1390089525/newarab.com-Between_Iran_and_a_hard_place_Afghans_are_forever_the_scapegoat.pdf">PDF</a></li><li><div class="t">From ummah to nationalism: The Islamic Republic&#x27;s identity shifts under airstrikes</div><div class="v"><i>Middle East Monitor</i>, 2025</div><a class="btn" href="https://pure.rug.nl/ws/portalfiles/portal/1362701159/From_ummah_to_nationalism_The_Islamic_Republic_s_identity_shifts_under_airstrikes_Middle_East_Monitor.pdf">PDF</a></li><li><div class="t">When restraint is punished: The bombing of Iran and collapse of the nuclear security order</div><div class="v"><i>Middle East Monitor</i>, 2025</div><a class="btn" href="https://pure.rug.nl/ws/portalfiles/portal/1350834646/When_restraint_is_punished_The_bombing_of_Iran_and_the_collapse_of_the_nuclear_security_order.pdf">PDF</a></li><li><div class="t">Nukes or be bombed: How US and Israeli strikes on Iran legitimised nuclear weapons</div><div class="v"><i>Middle East Monitor</i>, 2025</div><a class="btn" href="https://pure.rug.nl/ws/portalfiles/portal/1350834503/Nukes_or_be_bombed_How_Us_and_Israeli_strikes_on_Iran_legitimised_nuclear_weapons.pdf">PDF</a></li><li><div class="t">Bomb First, Justify Later: Iran&#x27;s Strategic Dilemma Under Israeli Hegemony</div><div class="v"><i>The Geopolitics</i>, 2025</div><a class="btn" href="https://pure.rug.nl/ws/portalfiles/portal/1331302084/Iran_Strategic_Dilemma_under_Israeli_Hegemony.pdf">PDF</a></li><li><div class="t">Trump dönemi dış politikasının temel sorusu: Ne alıyoruz?</div><div class="v"><i>Fikir Turu</i>, 2025</div><a class="btn" href="https://pure.rug.nl/ws/portalfiles/portal/1320701123/Trump_do_nemi_d_s_politikas_n_n_temel_sorusu_Ne_al_yoruz_-_Fikir_Turu.pdf">PDF</a></li><li><div class="t">ABD-İran görüşmeleri: Masada barış arayışı mı, hikâye mi var?</div><div class="v"><i>Fikir Turu</i>, 2025</div><a class="btn" href="https://pure.rug.nl/ws/portalfiles/portal/1302461283/ABD-_ran_g_r_meleri_Masada_bar_aray_m_hik_ye_mi_var_-_Fikir_Turu.pdf">PDF</a></li><li><div class="t">A Deal Doomed to Fail? The Fragile Prospects of a New Nuclear Agreement</div><div class="v"><i>Modern Diplomacy</i>, 2025</div><a class="btn" href="https://pure.rug.nl/ws/portalfiles/portal/1302462920/A_Deal_Doomed_to_Fail_The_Fragile_Prospects_of_a_New_Nuclear_Agreement_-_Modern_Diplomacy.pdf">PDF</a></li><li><div class="t">Opinion – Ukraine&#x27;s Future Is Not in Its Own Hands</div><div class="v"><i>E-International Relations</i>, 2025</div><a class="btn" href="https://pure.rug.nl/ws/portalfiles/portal/1241314955/Opinion-_-Ukraines-Future-Is-Not-in-Its-Own-Hands.pdf">PDF</a></li><li><div class="t">National Honor and Religious Duty: Iran&#x27;s Strategic Evolution in Confronting Israel</div><div class="v"><i>E-International Relations</i>, 2024</div><a class="btn" href="https://pure.rug.nl/ws/portalfiles/portal/1149513427/National-Honor-and-Religious-Duty-Irans-Strategic-Evolution-in-Confronting-Israel.pdf">PDF</a></li><li><div class="t">Equal Voices, Shared Futures: Reforming the UN at a Critical Crossroads</div><div class="v"><i>E-International Relations</i>, 2024</div><a class="btn" href="https://pure.rug.nl/ws/portalfiles/portal/1140397017/Equal-Voices-Shared-Futures-Reforming-the-UN-at-a-Critical-Crossroads.pdf">PDF</a></li><li><div class="t">Opinion – The Role of Smart Power and Collective Action in the Israel-Palestine Conflict</div><div class="v"><i>E-International Relations</i>, 2024</div><a class="btn" href="https://pure.rug.nl/ws/portalfiles/portal/1139729703/Opinion-_-The-Role-of-Smart-Power-and-Collective-Action-in-the-Israel-Palestine-Conflict.pdf">PDF</a></li></ul>
+    <p class="more" style="margin-top:26px"><a href="https://www.rug.nl/staff/mazlum.ozkan/research">Full list on the University of Groningen research portal →</a></p>
+  </section>
+</div>
+</main>
+<footer>© 2026 Mazlum Özkan · Last updated November 2026</footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Misc. · Mazlum Özkan</title>
+<meta name="description" content="Mazlum Özkan is a PhD candidate in Sociology at the University of Groningen, researching protest, social movements and repression.">
+<meta name="theme-color" content="#e8d5a5">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+/* VOICE: quiet, scholarly, clear — an academic homepage in the manner of a printed CV
+   IDEA: a sand-coloured letterhead over cream paper, with a red editorial mark under each heading
+   PICTURE: the round portrait with a blue and sand double ring, name and link pills beneath
+   COLOUR and TYPE: sand #e8d5a5, cream paper, slate-blue rule, brick-red accent, violet tabs; EB Garamond + Source Serif 4
+   LAYOUT: sticky profile column left, sections right; one column below 860px */
+:root{color-scheme:light dark;
+ --paper:light-dark(#faf6eb,#17150f);--sand:light-dark(#e8d5a5,#2b2518);--ink:light-dark(#2a2622,#ece6da);
+ --soft:light-dark(#5e574e,#b5ac9c);--rule:light-dark(#e8d5a5,#3a3222);--blue:light-dark(#8095c0,#8ea2cc);
+ --red:light-dark(#b8382c,#e77b6e);--violet:light-dark(#9c7bb3,#b597c9);--card:light-dark(#ffffff,#211e16)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:80px}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.75 "Source Serif 4",Georgia,serif;overflow-x:clip}
+a{color:var(--red);text-underline-offset:3px;text-decoration-thickness:1px}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:3px}
+.top{position:sticky;top:0;z-index:5;background:var(--sand);border-bottom:4px solid var(--blue)}
+.top .in{max-width:1180px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;gap:4px 28px;padding:10px max(4vw,16px)}
+.brand{font:600 26px/1.2 "EB Garamond",Georgia,serif;color:var(--ink);text-decoration:none;margin-right:auto}
+.top nav{display:flex;flex-wrap:wrap;gap:4px 26px}
+.top nav a{font:500 20px/1 "EB Garamond",Georgia,serif;color:var(--ink);text-decoration:none;padding:12px 0 8px;border-bottom:3px solid transparent}
+.top nav a:hover{color:var(--red)}
+.top nav a[aria-current]{color:var(--red);border-color:var(--red)}
+.wrap{max-width:1180px;margin:auto;padding:clamp(28px,4vw,56px) max(4vw,16px);display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:clamp(28px,5vw,72px)}
+.wrap.single{grid-template-columns:minmax(0,1fr);max-width:900px}
+.side{text-align:center;align-self:start;position:sticky;top:96px}
+.photo{width:min(230px,70%);aspect-ratio:1;margin:0 auto 26px;border-radius:50%;padding:7px;background:var(--sand);border:5px solid var(--blue);position:relative}
+.photo div{width:100%;height:100%;border-radius:50%;overflow:hidden;background:linear-gradient(160deg,#c9b98f,#8a7a57);display:grid;place-items:center;position:relative}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.photo span{font:600 64px/1 "EB Garamond",Georgia,serif;color:#fffaf0}
+.side h1{font:600 clamp(34px,4vw,42px)/1.1 "EB Garamond",Georgia,serif;margin:0 0 12px}
+.side .role{color:var(--soft);margin:0 0 6px;font-size:17px;line-height:1.6}
+.side .aff{display:inline-block;margin-bottom:22px;font-size:19px}
+.pills{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;list-style:none;padding:0;margin:0}
+.pills a{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border:1.5px solid var(--blue);border-radius:24px;color:var(--ink);text-decoration:none;font-size:16px;background:var(--paper)}
+.pills a:hover{background:var(--sand)}
+h2{font:600 clamp(28px,3vw,34px)/1.15 "EB Garamond",Georgia,serif;margin:0 0 22px;padding-bottom:12px;
+ background:linear-gradient(var(--red),var(--red)) left bottom/90px 4px no-repeat,linear-gradient(var(--rule),var(--rule)) left bottom/100% 4px no-repeat}
+h3{font:600 20px/1.3 "EB Garamond",Georgia,serif;margin:0}
+section{margin-bottom:clamp(36px,5vw,56px)}
+p{margin:0 0 16px;max-width:72ch}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,4vw,56px)}
+.chips{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:12px}
+.chips li{background:var(--card);border-left:5px solid var(--violet);padding:6px 18px 6px 22px;font-size:16px}
+.edu{list-style:none;padding:0;margin:0;display:grid;gap:22px}
+.edu .inst{font-size:18px}.edu .yrs,.edu .note{color:var(--soft);font-size:15px}
+.edu .note{display:block}
+.pubs{list-style:none;padding:0;margin:0;display:grid;gap:22px}
+.pubs .t{font-weight:600;line-height:1.45}
+.pubs .v{color:var(--soft);font-size:16px}
+.pubs .v i{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;min-height:32px;margin-top:6px;padding:0 14px;border:1.5px solid var(--blue);border-radius:16px;color:var(--ink);text-decoration:none;font-size:14px}
+.btn:hover{background:var(--sand)}
+.tag{display:inline-block;font-size:13px;background:var(--sand);color:var(--ink);padding:1px 10px;border-radius:10px;margin-left:6px;vertical-align:2px}
+.more{font-size:17px}
+.sub{margin:34px 0 18px;font:600 22px/1.2 "EB Garamond",Georgia,serif;color:var(--soft)}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}
+.proj div{background:var(--card);border-left:5px solid var(--violet);padding:16px 20px}
+.proj p{font-size:16px;color:var(--soft);margin:6px 0 0}
+blockquote{margin:24px 0;padding:2px 0 2px 20px;border-left:4px solid var(--red);font:italic 21px/1.5 "EB Garamond",Georgia,serif;max-width:60ch}
+blockquote cite{display:block;font:normal 15px "Source Serif 4",serif;color:var(--soft);margin-top:6px}
+.lang{border-collapse:collapse;font-size:16px;min-width:min(100%,360px)}
+.lang td{padding:8px 0;border-bottom:1px solid var(--rule)}.lang td:last-child{text-align:right;color:var(--soft);padding-left:40px}
+footer{text-align:center;color:var(--soft);font-size:15px;padding:24px 16px 40px;border-top:4px solid var(--rule);max-width:1180px;margin:auto}
+@media(max-width:860px){.wrap{grid-template-columns:minmax(0,1fr)}.side{position:static}.two{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){.top nav{gap:2px 18px}.top nav a{font-size:18px}.brand{font-size:23px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="in"><a class="brand" href="index.html">Mazlum Özkan</a><nav aria-label="Main"><a href="index.html">Home</a><a href="research.html">Research</a><a href="misc.html" aria-current=page>Misc.</a><a href="cv.pdf">CV</a></nav></div></header>
+<main class="wrap single">
+
+<div>
+  <section>
+    <h2>Autobiography</h2>
+    <p>I grew up in Altınyurt, a small village in Gaziantep, Türkiye. Village life was quiet, but films and books opened doors to worlds far beyond it. Through them I travelled to other countries, heard other languages and glimpsed other ways of living long before I ever left home. That early curiosity has steered almost every big decision I have made since.</p>
+      <p>My education started at the village primary school. Altınyurt had no middle school, so each morning a transport programme took me to a school in a nearby town. It was my first small journey out into the wider world. Later, at Gaziantep High School, I found myself drawn to global affairs, and above all to the Middle East, a region I have always seen as a boiling cauldron. Studying it became a dream, and that interest led me to study International Relations, taught in English, at Yalova University. I graduated in 2017.</p>
+              <p>Then came a turning point. In the same year I graduated, I was awarded a government scholarship under Türkiye's 1416 Law (YLSY), which gave me the chance to continue my studies abroad. It was one of the happiest moments of my life, the moment the worlds I had only seen in films and books suddenly felt within reach. In May 2018, I moved to Iran. I began with intensive Persian training at the Dehkhoda Lexicon Institute and the International Center for Persian Studies, and went on to complete my master's in International Relations at the University of Tehran in 2021. My master's thesis examined how political considerations affect the implementation of legal agreements between Turkey and Iran.</p>
+        <p>After Iran, a new chapter began. In June 2023, I started my PhD in Sociology at the University of Groningen in the Netherlands. There I found myself in a very different academic world, more theoretical and built around new quantitative methods, and it gave me a whole new way of looking at the questions I care about. My research explores how social movements respond to repression, and how political and structural conditions shape when and how people act together. My current work focuses on the emotions of protesters and the role these emotions play in protest. My cases come from Iran, but my broader ambition is to build my career as a specialist in social movements. Through the SCOOP programme and ICS, I work in an interdisciplinary environment alongside researchers from very different fields. This has greatly enriched my work and taught me to look at protest, repression and politics from new angles.</p>
+        <p>Studying abroad turned that childhood curiosity into everyday life. I have lived among people from different cultures, made friends across borders, and learned their languages along the way. I believe that to truly understand a society, you need to understand its language, and learning a new one is one of the things that makes me happiest.</p>
+        <p>Outside academia, films are my greatest passion, especially adventures and comedies. I always watch them in their original language rather than dubbed: it keeps the film's real voice, and it lets me practise the languages I love at the same time. In many ways, my favourite films form a small map of the languages and places that have shaped me. From English-language cinema, I keep returning to the epic worlds of The Lord of the Rings, The Hobbit and the Harry Potter series, the clever mysteries of Sherlock Holmes, and unforgettable stories such as Hidalgo, The Terminal and Django Unchained. Alongside these, Iranian cinema has given me some of my biggest laughs, from Ekhrajiha (اخراجی‌ها) and The Lizard (مارمولک) to the much-loved series The Capital (پایتخت), and since I began learning Iranian dialects, I have also enjoyed series in different regional accents. Russian productions have their place too: the comedy series Kitchen (Кухня) has been both great entertainment and a lively language lesson. Yet perhaps the film closest to my heart is the Indian classic 3 Idiots. One line from it has stayed with me for years: “All is well.” It reminds me to stay calm and focus on solutions when problems arise.</p>
+        <p>Living in different worlds changes a person, and it has certainly changed me. My curiosity has taken me from a small village out into the wider world, into very different cultures and societies. Each of these worlds has its own language, its own way of life and its own sense of what is right. I used to believe there was only one truth. Meeting different people, learning their languages and seeing how differently they live, believe and find happiness taught me that there are many.</p>
+        <p>Looking back, I could never have imagined that a child from a small village in Gaziantep would one day live in different countries and write a PhD on protest and social movements. The journey has taught me persistence, curiosity and the value of never stopping learning. Along the way, films, books and languages have remained my constant companions, still opening new worlds to me, just as they did when I was a child in the village.</p>
+        <blockquote>“Two roads diverged in a wood, and I— / I took the one less traveled by, / And that has made all the difference.”<cite>Robert Frost</cite></blockquote>
+        <p>My path has rarely been the expected one, and I am still curious to see where it leads next.</p>
+  </section>
+  <section>
+    <h2>Languages</h2>
+    <table class="lang">
+      <tr><td>Turkish</td><td>Native</td></tr><tr><td>English</td><td>Advanced</td></tr>
+      <tr><td>Persian</td><td>Advanced</td></tr><tr><td>Russian</td><td>Intermediate</td></tr>
+      <tr><td>Dutch</td><td>Intermediate</td></tr>
+    </table>
+  </section>
+  <section>
+    <h2>Contact</h2>
+    <p>mazlum.ozkan@rug.nl<br>Department of Sociology, University of Groningen<br>Grote Rozenstraat 31, 9712 TG Groningen, The Netherlands</p>
+  </section>
+</div>
+</main>
+<footer>© 2026 Mazlum Özkan · Last updated November 2026</footer>
+</body>
+</html>
