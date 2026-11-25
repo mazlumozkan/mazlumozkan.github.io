@@ -48,8 +48,8 @@ h3{font:600 20px/1.3 "EB Garamond",Georgia,serif;margin:0}
 section{margin-bottom:clamp(36px,5vw,56px)}
 p{margin:0 0 16px;max-width:72ch}
 .two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,4vw,56px)}
-.chips{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:12px}
-.chips li{background:var(--card);border-left:5px solid var(--violet);padding:6px 18px 6px 22px;font-size:16px}
+.chips{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px}
+.chips li{background:var(--card);border-left:4px solid var(--violet);padding:4px 14px;font-size:15px;line-height:1.6}
 .edu{list-style:none;padding:0;margin:0;display:grid;gap:22px}
 .edu .inst{font-size:18px}.edu .yrs,.edu .note{color:var(--soft);font-size:15px}
 .edu .note{display:block}
@@ -69,6 +69,11 @@ blockquote{margin:24px 0;padding:2px 0 2px 20px;border-left:4px solid var(--red)
 blockquote cite{display:block;font:normal 15px "Source Serif 4",serif;color:var(--soft);margin-top:6px}
 .lang{border-collapse:collapse;font-size:16px;min-width:min(100%,360px)}
 .lang td{padding:8px 0;border-bottom:1px solid var(--rule)}.lang td:last-child{text-align:right;color:var(--soft);padding-left:40px}
+.plain{padding-left:20px;margin:0;display:grid;gap:10px}
+.plain li{padding-left:4px;line-height:1.6}.plain li::marker{color:var(--red)}
+.entry{margin-bottom:24px}.entry .t{font-weight:600;line-height:1.45}.entry .v{color:var(--soft);font-size:16px}.entry .v i{color:var(--ink)}
+details{margin-top:6px}details summary{cursor:pointer;color:var(--red);font-size:15px;font-weight:600}
+details p{font-size:16px;color:var(--soft);margin-top:8px}
 footer{text-align:center;color:var(--soft);font-size:15px;padding:24px 16px 40px;border-top:4px solid var(--rule);max-width:1180px;margin:auto}
 @media(max-width:860px){.wrap{grid-template-columns:minmax(0,1fr)}.side{position:static}.two{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:600px){.top nav{gap:2px 18px}.top nav a{font-size:18px}.brand{font-size:23px}}
