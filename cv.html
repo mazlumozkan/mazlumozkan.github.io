@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV · Mazlum Özkan</title>
+<meta name="description" content="Mazlum Özkan is a PhD candidate in Sociology at the University of Groningen, researching protest, social movements and repression.">
+<meta name="theme-color" content="#dc002d">
+<link rel="canonical" href="https://mazlumozkan.github.io/cv.html">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+/* VOICE: quiet, scholarly, clear — an academic homepage in the manner of a printed CV
+   IDEA: a University of Groningen red letterhead over white paper, with a red mark under each heading
+   PICTURE: the round portrait with a red ring, name and link pills beneath
+   COLOUR and TYPE: RUG red #dc002d, white paper, light grey cards; EB Garamond + Source Serif 4
+   LAYOUT: sticky profile column left, sections right; one column below 860px */
+:root{color-scheme:light;
+ --paper:#ffffff;--sand:#f5f5f5;--ink:#222222;--soft:#5f5f5f;--rule:#e3e3e3;--blue:#dc002d;
+ --red:#dc002d;--violet:#dc002d;--card:#f5f5f5;--bar:#dc002d}
+:root[data-theme]{color-scheme:light}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:80px}
+body{margin:0;background:var(--paper);color:var(--ink);font:15.5px/1.7 "Source Serif 4",Georgia,serif;overflow-x:clip}
+a{color:var(--red);text-underline-offset:3px;text-decoration-thickness:1px}
+a:focus-visible{outline:2px solid #222;outline-offset:3px;border-radius:3px}
+.top{position:sticky;top:0;z-index:5;background:var(--bar);border-bottom:0}
+.top .in{max-width:1180px;margin:auto;display:flex;flex-wrap:wrap;align-items:center;gap:4px 28px;padding:10px max(4vw,16px)}
+.brand{font:600 23px/1.2 "EB Garamond",Georgia,serif;color:#fff;text-decoration:none;margin-right:auto}
+.top nav{display:flex;flex-wrap:wrap;gap:4px 26px}
+.top nav a{font:500 18px/1 "EB Garamond",Georgia,serif;color:#fff;text-decoration:none;padding:12px 0 8px;border-bottom:3px solid transparent}
+.top nav a:hover{border-color:rgba(255,255,255,.6)}
+.top nav a[aria-current]{color:#fff;border-color:#fff}
+.wrap{max-width:1180px;margin:auto;padding:clamp(28px,4vw,56px) max(4vw,16px);display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:clamp(28px,5vw,80px)}
+.wrap.single{grid-template-columns:minmax(0,1fr);max-width:980px}
+.side{text-align:center;align-self:start;position:sticky;top:90px}
+.photo{width:min(180px,55%);aspect-ratio:1;margin:0 auto 26px;border-radius:50%;padding:6px;background:#fff;border:4px solid var(--red);position:relative}
+.photo div{width:100%;height:100%;border-radius:50%;overflow:hidden;background:linear-gradient(160deg,#e8475f,#a00020);display:grid;place-items:center;position:relative}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.photo span{font:600 64px/1 "EB Garamond",Georgia,serif;color:#fffaf0}
+.side h1{font:600 clamp(26px,3vw,31px)/1.1 "EB Garamond",Georgia,serif;margin:0 0 12px}
+.side .role{color:var(--soft);margin:0 0 6px;font-size:17px;line-height:1.6}
+.side .aff{display:inline-block;margin-bottom:20px;font-size:17px}
+.pills{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:330px;margin:0 auto;list-style:none;padding:0;margin:0}
+.pills a{display:inline-flex;align-items:center;min-height:36px;padding:0 16px;border:1.5px solid #cfcfcf;border-radius:24px;color:var(--ink);text-decoration:none;font-size:15px;background:var(--paper)}
+.emtxt{margin:14px 0 0;font-size:14px;color:var(--soft)}
+.pills a:hover{border-color:var(--red);color:var(--red)}
+h2{font:600 clamp(24px,2.6vw,29px)/1.15 "EB Garamond",Georgia,serif;margin:0 0 22px;padding-bottom:12px;
+ background:linear-gradient(var(--red),var(--red)) left bottom/90px 4px no-repeat,linear-gradient(var(--rule),var(--rule)) left bottom/100% 4px no-repeat}
+h3{font:600 20px/1.3 "EB Garamond",Georgia,serif;margin:0}
+section{margin-bottom:clamp(36px,5vw,56px)}
+p{margin:0 0 16px;max-width:72ch}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,4vw,56px)}
+.chips{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px}
+.chips li{background:var(--card);border-left:4px solid var(--violet);padding:4px 14px;font-size:15px;line-height:1.6}
+.edu{list-style:none;padding:0;margin:0;display:grid;gap:22px}
+.edu .inst{font-size:18px}.edu .yrs,.edu .note{color:var(--soft);font-size:15px}
+.edu .note{display:block}
+.pubs{list-style:none;padding:0;margin:0;display:grid;gap:22px}
+.pubs .t{font-weight:600;line-height:1.45}
+.pubs .v{color:var(--soft);font-size:16px}
+.pubs .v i{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;min-height:32px;margin-top:6px;padding:0 14px;border:1.5px solid #cfcfcf;border-radius:16px;color:var(--ink);text-decoration:none;font-size:14px}
+.btn:hover{border-color:var(--red);color:var(--red)}
+.tag{display:inline-block;font-size:13px;background:#fbe5e9;color:#a00020;padding:1px 10px;border-radius:10px;margin-left:6px;vertical-align:2px}
+.more{font-size:17px}
+.sub{margin:34px 0 18px;font:600 22px/1.2 "EB Garamond",Georgia,serif;color:var(--soft)}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}
+.proj div{background:var(--card);border-left:5px solid var(--violet);padding:16px 20px}
+.proj p{font-size:16px;color:var(--soft);margin:6px 0 0}
+blockquote{margin:24px 0;padding:2px 0 2px 20px;border-left:4px solid var(--red);font:italic 21px/1.5 "EB Garamond",Georgia,serif;max-width:60ch}
+blockquote cite{display:block;font:normal 15px "Source Serif 4",serif;color:var(--soft);margin-top:6px}
+.lang{border-collapse:collapse;font-size:16px;min-width:min(100%,360px)}
+.lang td{padding:8px 0;border-bottom:1px solid var(--rule)}.lang td:last-child{text-align:right;color:var(--soft);padding-left:40px}
+.plain{padding-left:20px;margin:0;display:grid;gap:10px}
+.plain li{padding-left:4px;line-height:1.6}.plain li::marker{color:var(--red)}
+.entry{margin-bottom:24px}.entry .t{font-weight:600;line-height:1.45}.entry .v{color:var(--soft);font-size:16px}.entry .v i{color:var(--ink)}
+details{margin-top:6px}details summary{cursor:pointer;color:var(--red);font-size:15px;font-weight:600}
+details p{font-size:16px;color:var(--soft);margin-top:8px}
+.subh{font:600 22px/1.2 "EB Garamond",Georgia,serif;margin:26px 0 14px}
+.recs{columns:3 240px;column-gap:36px}.rec{break-inside:avoid;margin-bottom:22px}
+.rec h3{font-size:17px;color:var(--red);margin-bottom:6px}.rec .plain{gap:4px}
+.frn{font-weight:600}.films{margin:4px 0 2px;padding-left:22px;display:grid;gap:2px;font-size:15px}.films li::marker{color:var(--soft);font-size:13px}
+.lang-tag{font-size:13px;color:var(--soft);direction:ltr;unicode-bidi:isolate}.soon{font-style:italic;color:var(--soft)}
+.wp{background:#fff;border:1px solid var(--rule);border-left:4px solid var(--red);border-radius:4px;padding:16px 22px;margin-bottom:14px}
+.wp .st{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);margin-bottom:4px}
+.wp .t{font:600 18px/1.35 "EB Garamond",Georgia,serif}.wp .w{margin-top:4px;color:var(--soft)}
+footer{text-align:center;color:var(--soft);font-size:15px;padding:24px 16px 40px;border-top:4px solid var(--rule);max-width:1180px;margin:auto}
+@media(max-width:860px){.wrap{grid-template-columns:minmax(0,1fr)}.side{position:static}.two{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:600px){.top nav{gap:2px 18px}.top nav a{font-size:18px}.brand{font-size:23px}}
+.cvbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:0 0 18px}
+.cvbar p{margin:0;color:#666}
+.cvframe{display:block;width:100%;height:85vh;min-height:600px;border:1px solid #ddd;border-radius:6px;background:#fff}
+</style>
+</head>
+<body>
+<header class="top"><div class="in"><a class="brand" href="index.html">Mazlum Özkan</a><nav aria-label="Main"><a href="index.html">Home</a><a href="research.html">Research</a><a href="misc.html">Misc.</a><a href="cv.html" aria-current=page>CV</a></nav></div></header>
+<main class="wrap single">
+<section><h2>Curriculum Vitae</h2>
+<div class="cvbar"><p>Last updated November 2026</p><a class="btn" href="cv.pdf" download>Download PDF</a></div>
+<iframe class="cvframe" src="cv.pdf" title="CV of Mazlum Özkan"></iframe>
+<p style="margin-top:12px;color:#666;font-size:14px">If the CV does not display, <a href="cv.pdf">open the PDF directly</a>.</p>
+</section>
+</main>
+<footer>© 2026 Mazlum Özkan · Last updated November 2026</footer>
+</body>
+</html>
